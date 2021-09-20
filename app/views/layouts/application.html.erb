@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
   <head>
-    <title>Rubizan</title>
+    <title>るび算</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="h-100 text-center text-white bg-dark">
+    <div class="cover-container d-flex h-100 flex-column">
+      <header class="mb-auto"></header>
+      <%= yield %>
+      <footer class="mt-auto text-white-50"></footer>
+    </div>
   </body>
 </html>
