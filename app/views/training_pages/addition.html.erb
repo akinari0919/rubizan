@@ -3,28 +3,27 @@
 
 <!-- 問題文 -->
 <p class="lead">---------------------------</p>
-<p class="lead">1:　a　=　1</p>
-<p class="lead">2:　b　=　1</p>
+<p class="lead">1:　a　=　3</p>
+<p class="lead">2:　b　=　8</p>
 <p class="lead">3:　answer　=　a　+　b</p>
 <p class="lead">4:　puts　answer</p>
 <p class="lead">---------------------------</p>
 
 <!-- 入力フォーム/送信ボタン -->
 <div class="lead mb-5">
-  <form>
+  <%= form_tag result_path do %>
     <div class="row align-items-center mb-3">
       <div class="col-auto">
         <label class="col-form-label">=></label>
       </div>
       <div>
-        <input class="form-control"　placeholder="Disabled input">
+        <input name="users_answer" class="form-control" placeholder="答えを入力">
       </div>
     </div>
     <button class="btn btn-lg btn-primary">送信</button>
-  </form>
+  <% end %>
 </div>
 
 <p class="lead">
   <%= link_to '戻る', root_path, class: "btn btn-lg btn-secondary fw-bold border-white" %>
-</p>
-
+</p>  
